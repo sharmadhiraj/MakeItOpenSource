@@ -1,3 +1,5 @@
+import os
+
 import requests
 
 from config import access_token
@@ -27,6 +29,7 @@ print(response_json["name"] + " created successfully")
 init_git = input('Init git project & connect to remote (y or n)?')
 if init_git.strip().lower() == "y":
     clone_url = response_json['clone_url']
-    print(clone_url)
+    os.system("git init")
+    os.system("git remote add origin " + clone_url)
 
 print("Thank You !")
