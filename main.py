@@ -7,7 +7,7 @@ from utils import show_error_and_exit
 
 print("Welcome to Make It Open Source")
 
-folder = os.path.basename(os.path.dirname(os.path.realpath(__file__)))
+folder = os.path.basename(os.getcwd())
 repo_name = input("Please enter repository name (default " + folder + "): ")
 repo_name = folder if not repo_name else repo_name
 repo_description = input('Enter repository description (optional) : ')
