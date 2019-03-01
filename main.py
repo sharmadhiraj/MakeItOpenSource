@@ -7,11 +7,10 @@ from utils import show_error_and_exit
 
 print("Welcome to Make It Open Source")
 
-repo_name = None
-while not repo_name:
-    repo_name = input('Please enter repository name : ')
-
-repo_description = input('Enter repository description(optional) : ')
+folder = os.path.basename(os.path.dirname(os.path.realpath(__file__)))
+repo_name = input("Please enter repository name (default " + folder + "): ")
+repo_name = folder if not repo_name else repo_name
+repo_description = input('Enter repository description (optional) : ')
 
 repo_info = {'name': repo_name, 'description': repo_description}
 url = "https://api.github.com/user/repos?access_token=" + access_token
