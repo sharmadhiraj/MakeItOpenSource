@@ -12,10 +12,12 @@ https://help.github.com/en/articles/creating-a-personal-access-token-for-the-com
 
 **Usage guide**
 1. Open terminal & navigate to your project (not MakeItOpenSource).
-2. Run python script main.py from make it open source : python FULL_PATH_TO_MAKE_IT_OPEN_SOURCE/main.py
+2. Run python script main.py from make it open source : *python FULL_PATH_TO_MAKE_IT_OPEN_SOURCE/main.py*
 3. Provide repo name (project folder name is default), repo description (optional) and confirmation to init & add remote.
-4. Use q argument for quick repo setup. ..../main.py q
+4. Use q argument for quick repo setup. *..../main.py q*
 
 **Use alias for easy use**
+
 Example for Ubuntu (on .bashrc)
+
 *alias mios="python /home/...../Projects/Python/MakeItOpenSource/main.py"*
