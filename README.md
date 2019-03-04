@@ -21,3 +21,4 @@ https://help.github.com/en/articles/creating-a-personal-access-token-for-the-com
 Example for Ubuntu (on .bashrc)
 
 *alias mios="python /home/...../Projects/Python/MakeItOpenSource/main.py"*
+Now just *mios* or *mios q* will be enough.
