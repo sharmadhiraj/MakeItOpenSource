@@ -1,27 +1,42 @@
 # Make It Open Source
-Quickly create public repository in GitHub while creating a project.
 
-With this tool you can create a public GitHub repo, init git & add remote with single command.
+Quickly create a public repository on GitHub with just one command while starting a project.
 
-**Setup guide**
-1. Clone **_MakeItOpenSource_** project.
-2. Rename _config.example.py_ to _config.py_.
-3. Get personal _access token_ for your GitHub account.  
-https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line
-4. Add your _access token_ to _config.py_
+### Setup Guide
 
-**Usage guide**
-1. Open terminal & navigate to your project (that you want to make open source).
-2. Run python script _main.py_  
-`python FULL_PATH_TO_MAKE_IT_OPEN_SOURCE/main.py`
-3. Provide repo name (project folder name is default), repo description (optional) and confirmation to init & add remote.
-4. Use q argument for quick repo setup with default values
-`python FULL_PATH_TO_MAKE_IT_OPEN_SOURCE/main.py q`
+1. Clone the **_MakeItOpenSource_** project.
+2. Rename `config.example.py` to `config.py`
+3. Obtain a personal access token for your GitHub account.  
+   [Creating a Personal Access Token for the Command Line](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line)
+4. Add your access token to `config.py`
 
-**Setup alias for easy use**
+### Usage Guide
 
-For Ubuntu (on .bashrc)
+1. Open the terminal and navigate to your project directory (the one you want to make open source).
+2. Run the Python script `main.py` with the command:  
+   `python FULL_PATH_TO_MAKE_IT_OPEN_SOURCE/main.py`
+3. Provide the repository name (the project folder name is the default), repository description (optional), and confirmation to initialize and add remote.
+4. Use the 'q' argument for quick repository setup with default values:  
+   `python FULL_PATH_TO_MAKE_IT_OPEN_SOURCE/main.py q`
 
-`alias mios="python /home/...../Projects/Python/MakeItOpenSource/main.py"`
+### Setup Alias for Easy Use
 
-Now just `mios` or `mios q` will be enough.
+For **Ubuntu** or **MacOS** (on .zshrc or .bashrc):
+
+*If using Zsh shell (.zshrc)*.  
+```bash
+alias mios="python /path/to/MakeItOpenSource/main.py"
+```
+
+*If using Bash shell (.bashrc)*.  
+```bash
+alias mios="python /path/to/MakeItOpenSource/main.py"
+```
+
+For **Windows**, you need to setup Environment Variable.
+
+Now you can simply use `mios` or `mios q` for quick repository setup.
+
+<hr/>
+
+Please let me know if you have any queries, feedback, or suggestions.
