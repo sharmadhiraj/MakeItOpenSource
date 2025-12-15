@@ -16,7 +16,7 @@ Quickly create a public repository on GitHub with just one command while startin
 2. Run the Python script `main.py` with the command:  
    `python FULL_PATH_TO_MAKE_IT_OPEN_SOURCE/main.py`
 3. Provide the repository name (the project folder name is the default), repository description (optional), and confirmation to initialize and add remote.
-4. Use the 'q' argument for quick repository setup with default values:  
+4. Use the 'q' argument for quick repository setup with default values(repo name = folder name, no description):  
    `python FULL_PATH_TO_MAKE_IT_OPEN_SOURCE/main.py q`
 
 ### Setup Alias for Easy Use
